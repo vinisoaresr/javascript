@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo D - Condições</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        div {
+            background-color: green;
+            margin: auto;
+            padding: 10px;
+            font-weight: bold;
+        }
+        div input {
+            padding: 10px;
+        }
+        div p {
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        <h1>Verificação de multa</h1>
+        <p>Digite a velocidade: </p>
+        <input type="number" name="veloc1" id="veloc1">
+        <input type="button" value="Conferir" onclick="verificar_veloc()">
+    </div>
+
+    <script>
+        function verificar_veloc(){
+            veloc = window.document.getElementById('veloc1');
+            veloc = Number(veloc.value)
+            console.log(veloc)
+            if (veloc > 110){
+                console.log('você foi multado')
+            } else {
+                console.log('você não foi multado')
+            }
+        }
+
+
+    </script>
+</body>
+</html>

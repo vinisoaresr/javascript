@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>teste</h1>
+    <p>Num
+        <input type="number" id="value">
+    </p>
+    <input type="button" value="Verificar" onclick='main()'>
+
+    <script>
+        function main(){
+            let value_input = document.getElementById('value');
+            let value_input_int = Number(value_input.value);
+            console.log(value_input);
+            console.log(value_input_int);
+        }
+    </script>
+</body>
+</html>

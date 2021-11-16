@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo C - Curso de Java Script</title>
+    <style>
+        *{
+            margin: auto;
+            padding: 0px;
+        }
+        div#area {
+            font: normal 20pt Arial;
+            background-color: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="area">
+        interaja...
+    </div>
+    <script>
+        var a = window.document.getElementById('area');
+        a.addEventListener('click', click_mouse);
+        a.addEventListener('mouseenter', mouse_enter);
+        a.addEventListener('mouseout', mouse_exit);
+
+        function click_mouse(){
+            a.innerText = 'clicou';
+            a.style.backgroundColor = 'red'
+        }
+        function mouse_enter(){
+            a.innerText = 'entrou!'
+            a.style.backgroundColor = 'blue'
+        }
+        function mouse_exit(){
+            a.innerText = 'saiu!'
+            a.style.backgroundColor = 'yellow'
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+body {
+    background-color: black;
+}
+
+body {
+    color: white;
+}
+aside {
+    text-align: center;
+}
+article > p {
+    background-color: red;
+    display: inline-block;
+    margin: 2%;
+    padding: 2%;
+    max-width: 50px;
+    max-height: 50px;
+}

@@ -1,0 +1,13 @@
+*{
+    background-color: rgb(56, 56, 50);
+    color: rgb(202, 199, 199);
+
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    display: flex;
+
+    justify-content: center;
+}

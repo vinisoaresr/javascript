@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <h1>Somando valores</h1>
+
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <br>
+    <input type="button" value="Somar" onclick="somar()">
+    <input type="button" value="Multiplicação" onclick="mult()">
+    <input type="button" value="Divisão" onclick="div()">
+    <div id="res"> <br> Resultado</div>
+
+    <script>
+        function somar(){
+            var campo_1 = window.document.getElementById('txtn1');
+            var campo_2 = window.document.getElementById('txtn2');
+            var res = window.document.getElementById('res');
+            
+            var num1 = Number.parseFloat(campo_1.value);
+            var num2 = Number.parseFloat(campo_2.value);
+
+            var s = num1 + num2;
+            res.innerHTML = `<br> O resultado de ${num1} + ${num2} é =  <strong> ${s} <strong> `;
+        }
+        function mult(){
+            var campo_1 = window.document.getElementById('txtn1');
+            var campo_2 = window.document.getElementById('txtn2');
+            var res = window.document.getElementById('res');
+            
+            var num1 = Number.parseFloat(campo_1.value);
+            var num2 = Number.parseFloat(campo_2.value);
+
+            var s = num1 * num2;
+            res.innerHTML = `<br> O resultado de ${num1} + ${num2} é =  <strong> ${s} <strong> `;
+        }
+        function div(){
+            var campo_1 = window.document.getElementById('txtn1');
+            var campo_2 = window.document.getElementById('txtn2');
+            var res = window.document.getElementById('res');
+            
+            var num1 = Number.parseFloat(campo_1.value);
+            var num2 = Number.parseFloat(campo_2.value);
+
+            var s = num1 / num2;
+            res.innerHTML = `<br> O resultado de ${num1} + ${num2} é =  <strong> ${s} <strong> `;
+        }
+    </script>
+</body>
+</html>
+

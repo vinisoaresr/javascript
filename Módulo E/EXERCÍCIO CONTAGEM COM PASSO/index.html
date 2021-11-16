@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Contador</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/jovem-m.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Vamos contar?</h1>
+    </header>
+
+    <section>
+        <div>
+
+            <p>Início: 
+                <input type="number" name="txt_ini" id="txt_ini" min="0">
+            </p>
+            
+            <p>Fim: 
+                <input type="number" name="txt_fim" id="txt_fim" min="0">
+            </p>
+
+            <p>Passo: 
+                <input type="number" name="txt_passo" id="txt_passo" min="0">
+            </p>
+
+            <p>
+                <input type="button" value="Contar" onclick="contar()" id="botao">
+            </p>
+        </div>
+
+        <div id="res" >
+            <p>Preparando a contagem...</p>
+        </div>
+
+    </section>
+
+    <footer>
+        <p> &copy; criado por vinicius soares</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
